@@ -6,5 +6,6 @@ public class Botte extends Probleme {
 		super(type);
 		// TODO Auto-generated constructor stub
 	}
+	
 
 }
