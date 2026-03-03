@@ -7,4 +7,11 @@ public class FinLimite extends Limite {
 		return "Fin de limite";
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj) {
+			return true;
+		}
+		return obj != null && getClass() == obj.getClass();
+	}
 }

@@ -16,4 +16,17 @@ public class Borne extends Carte {
 	public String toString() {
 		return km + "KM";
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj) {
+			//this renvoi la classe si borne est compare a borne
+			return true;
+		}
+		if(obj == null || getClass() != obj.getClass()) {
+			return false;
+		}
+		Borne autre = (Borne) obj;
+		return km == autre.km;
+	}
 }
