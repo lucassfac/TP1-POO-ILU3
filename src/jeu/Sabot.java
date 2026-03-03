@@ -31,9 +31,9 @@ public class Sabot implements Iterable<Carte> {
     public Carte piocher() {
         Iterator<Carte> iterateur = iterator();
         if (iterateur.hasNext()) {
-            Carte cartePioCHee = iterateur.next();
+            Carte cartePioChee = iterateur.next();
             iterateur.remove();
-            return cartePioCHee;
+            return cartePioChee;
         }
         throw new NoSuchElementException("Le sabot est vide");
     }
